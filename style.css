@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  padding-top: 10rem;
+  color: rgb(95, 10, 192);
+  font-size: 3rem;
+  text-align: center;
+  animation: pulse;
+  animation-duration: 10s;
+}
+h1:hover {
+  color: antiquewhite;
+}
+
+form {
+  font-size: 2rem;
+  color: rgb(156, 90, 209);
+  padding-top: 10rem;
+  text-align: center;
+  animation: flash;
+  animation-duration: 10s;
+}
+form:hover {
+  color: antiquewhite;
+}
+
+button {
+  color: rgb(205, 196, 212);
+}
+button:hover {
+  color: rgb(195, 0, 255);
+}
