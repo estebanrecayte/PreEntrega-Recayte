@@ -8,7 +8,7 @@ function iniciar() {
     let numero = Number(document.getElementById("inputNum").value);
     {
       if (typeof numero != "number" || !Number.isInteger(numero)) {
-        alert("Debe pasar como argumento un número entero.");
+        alert("Debe ingresar un número entero");
       }
       let contador = 0;
 
