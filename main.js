@@ -1,22 +1,35 @@
 window.onload = iniciar;
 
 function iniciar() {
-  btnCalcular = document.getElementById("btnCalcular");
-  btnCalcular.addEventListener("click", contarDigitosEntero);
+  btnCrear.addEventListener("click", creadorVehiculo);
+  let autos = [];
 
-  function contarDigitosEntero() {
-    let numero = Number(document.getElementById("inputNum").value);
-    {
-      if (typeof numero != "number" || !Number.isInteger(numero)) {
-        alert("Debe ingresar un número entero");
-      }
-      let contador = 0;
+  function creadorObjetoVehiculo(marca, modelo, año) {
+    this.vehiculoMarca = marca;
+    this.vehiculoModelo = modelo;
+    this.vehiculoAño = año;
+    this.mostrarVehiculo = function () {
+      var msg =
+        "Se ha creado un vehiculo, esto son sus datos: \n" +
+        "Marca: " +
+        this.vehiculoMarca +
+        "\nModelo: " +
+        this.vehiculoModelo +
+        "\nAño: " +
+        this.vehiculoAño;
+      +autos;
+      alert(msg);
+    };
+  }
+  function creadorVehiculo() {
+    var marca = document.getElementById("inputMar").value;
+    var modelo = document.getElementById("inputMod").value;
+    var año = document.getElementById("inputAño").value;
 
-      while (numero >= 1) {
-        ++contador;
-        numero /= 10;
-      }
-      alert("La cantidad de digitos de su numero es: " + contador);
-    }
+    var nuevoVehiculo = new creadorObjetoVehiculo(marca, modelo, año);
+    nuevoVehiculo.mostrarVehiculo();
+    autos.push(nuevoVehiculo);
   }
 }
+
+/* No logre realizar un bucle para crear varios autos y luego agregarlos todos a un array e imprimirlo en un alert */

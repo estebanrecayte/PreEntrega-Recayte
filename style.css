@@ -1,7 +1,9 @@
 * {
+  background-repeat: no-repeat;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  background-color: black;
 }
 
 h1 {
@@ -21,8 +23,6 @@ form {
   color: rgb(156, 90, 209);
   padding-top: 10rem;
   text-align: center;
-  animation: flash;
-  animation-duration: 10s;
 }
 form:hover {
   color: antiquewhite;
@@ -33,4 +33,8 @@ button {
 }
 button:hover {
   color: rgb(195, 0, 255);
+}
+.creador {
+  padding-bottom: 5rem;
+  font-size: 2rem;
 }

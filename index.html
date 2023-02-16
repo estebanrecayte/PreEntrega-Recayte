@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contador de digitos!</title>
+    <title>Creador de vehiculos!</title>
     <link rel="stylesheet" href="/style.css" />
     <link
       rel="stylesheet"
@@ -12,11 +12,26 @@
     />
   </head>
   <body>
-    <h1>!Contador de Digitos!</h1>
+    <h1>¡Creador de vehiculos!</h1>
     <form action="">
-      <label>Ingrese su número:</label>
-      <input type="value" id="inputNum" min="0" />
-      <button id="btnCalcular" type="button">Calcular</button>
+      <label>Ingrese marca de vehiculo:</label>
+      <input type="value" id="inputMar" min="0" />
+      <button id="btnMarca" type="button">Ingresar</button>
+    </form>
+    <form action="">
+      <label>Ingrese su modelo:</label>
+      <input type="value" id="inputMod" min="0" />
+      <button id="btnModelo" type="button">Ingresar</button>
+    </form>
+    <form action="">
+      <label>Ingrese año del vehiculo:</label>
+      <input type="value" id="inputAño" min="0" />
+      <button id="btnAño" type="button">Ingresar</button>
+    </form>
+    <form action="">
+      <button id="btnCrear" type="button" class="creador">
+        Crear vehiculo
+      </button>
     </form>
     <script src="/main.js"></script>
   </body>
