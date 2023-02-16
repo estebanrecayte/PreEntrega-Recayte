@@ -38,3 +38,7 @@ button:hover {
   padding-bottom: 5rem;
   font-size: 2rem;
 }
+
+input {
+  color: antiquewhite;
+}
