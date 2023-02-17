@@ -2,7 +2,12 @@ window.onload = iniciar;
 
 function iniciar() {
   btnCrear.addEventListener("click", creadorVehiculo);
+  btnMostrar.addEventListener("click", funcionMostrar);
   let autos = [];
+
+  function funcionMostrar(){
+    alert(JSON.stringify(autos, null, 4));
+  }
 
   function creadorObjetoVehiculo(marca, modelo, año) {
     this.vehiculoMarca = marca;
@@ -30,6 +35,5 @@ function iniciar() {
     nuevoVehiculo.mostrarVehiculo();
     autos.push(nuevoVehiculo);
   }
+  
 }
-
-/* No logre realizar un bucle para crear varios autos y luego agregarlos todos a un array e imprimirlo en un alert */
